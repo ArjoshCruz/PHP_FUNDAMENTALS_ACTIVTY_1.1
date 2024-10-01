@@ -15,7 +15,7 @@ if(isset($_POST['submitBtn'])) {
         header('Location: index.php');
         exit();
     }
-
+    
     // Set the session variables
     $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;

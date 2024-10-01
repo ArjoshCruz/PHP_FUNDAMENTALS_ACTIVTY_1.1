@@ -9,9 +9,9 @@
     <?php session_start(); ?>
 
     <form action="handleForm.php" method="POST">
-        <p>Username: <input type="text" placeholder="First name here" name="username" required></p>
-        <p>Password: <input type="password" placeholder="Password here" name="password" required></p>
-        <p><input type="submit" value="Submit" name="submitBtn"></p>
+        <p>Username <input type="text" name="username" required></p>
+        <p>Password <input type="password" name="password" required></p>
+        <p><input type="submit" value="Login" name="submitBtn"></p>
     </form>
     <a href="unset.php"><button>Logout</button></a>
 
@@ -23,7 +23,6 @@
             echo "<br> <h2>User logged in: " . $_SESSION['username'] . "<br>Password: <br>" . $_SESSION['password'];
         }
     }
-
     ?>
     
 </body>
